@@ -1152,7 +1152,7 @@ class Runner(object):
 
     # Remove markers.
     canvas.segmentation[canvas.segmentation < 0] = 0
-
+    
     # Save segmentation results. Reduce # of bits per item if possible.
     storage.save_subvolume(
         unalign_image(canvas.segmentation),
